@@ -47,11 +47,11 @@ const AllProducts = async () => {
                     height={10}
                     alt="baby image"
                   />
-                  <Typography>{product.title}</Typography>
+                  <Typography>{product?.title}</Typography>
                 </TableCell>
-                <TableCell>{product.category}</TableCell>
-                <TableCell>{product._id}</TableCell>
-                <TableCell>{product.price}</TableCell>
+                <TableCell>{product?.category}</TableCell>
+                <TableCell>{product?._id}</TableCell>
+                <TableCell>{product?.price}</TableCell>
               </TableRow>
             ))}
           </TableBody>

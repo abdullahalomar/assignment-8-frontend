@@ -14,7 +14,7 @@ const TrendingProducts = async () => {
     (product1, product2) => product2.rating - product1.rating
   );
   return (
-    <div>
+    <>
       <Container className="mb-20">
         <Box
           sx={{
@@ -143,7 +143,7 @@ const TrendingProducts = async () => {
           ))}
         </Grid>
       </Container>
-    </div>
+    </>
   );
 };
 

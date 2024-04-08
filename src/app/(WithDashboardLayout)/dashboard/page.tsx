@@ -1,10 +1,11 @@
+import { Box } from "@mui/material";
 import React from "react";
 
 const DashboardHomePage = () => {
   return (
-    <div>
+    <Box>
       <h2>Dashboard Home page</h2>
-    </div>
+    </Box>
   );
 };
 

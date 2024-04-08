@@ -6,10 +6,10 @@ interface LayoutProps {
 
 const DashboardLayout = ({ children }: LayoutProps) => {
   return (
-    <div>
+    <>
       <h1>Dashboard</h1>
       <DashboardDrawer>{children}</DashboardDrawer>
-    </div>
+    </>
   );
 };
 
