@@ -16,8 +16,8 @@ interface ProductId {
 export const generateStaticParams = async () => {
   const res = await fetch(`${process.env.BACKEND_URL}/products`);
   const products = await res.json();
-  return products.data.slice(0, 10).map((product: Product) => ({
-    productId: product._id,
+  return products?.data?.slice(0, 10)?.map((product: Product) => ({
+    productId: product?._id,
   }));
 };
 
@@ -77,7 +77,7 @@ const ProductDetails = async ({ params }: ProductId) => {
             }}
           >
             <Typography sx={{ fontSize: "26px", fontWeight: 700 }}>
-              {product.data.title}
+              {product?.data?.title}
             </Typography>
             <HeartRatting />
           </Box>
@@ -95,17 +95,17 @@ const ProductDetails = async ({ params }: ProductId) => {
             }}
           >
             <Typography sx={{ fontSize: "28px", fontWeight: 400 }}>
-              {product.data.price}
+              {product?.data?.price}
             </Typography>
             <Box sx={{ display: "flex" }}>
               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
               <Divider orientation="vertical" variant="middle" flexItem />
-              <Typography>{product.data.rating}</Typography>
+              <Typography>{product?.data?.rating}</Typography>
             </Box>
           </Box>
           <Box mt={5}>
             <Typography sx={{ fontSize: "17px", fontWeight: 400 }}>
-              {product.data.description}
+              {product?.data?.description}
             </Typography>
             <Box my={4}>
               <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
@@ -152,7 +152,7 @@ const ProductDetails = async ({ params }: ProductId) => {
           {product.data.description}
         </Typography> */}
         <Typography my={4} sx={{ fontSize: "17px", fontWeight: 400 }}>
-          {product.data.description}
+          {product?.data?.description}
         </Typography>
         <Box>
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
