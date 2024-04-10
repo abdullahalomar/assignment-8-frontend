@@ -58,9 +58,9 @@ const CarouselComponent = () => {
             <Image
               src={feeding}
               width={500}
-              height={400}
+              height={220}
               alt="baby image one"
-              className="mb-2 rounded-xl h-[220px]"
+              className="mb-2 rounded-xl h-[200px]"
             />
             <Typography component="h6" variant="h6">
               Feeding
@@ -92,9 +92,9 @@ const CarouselComponent = () => {
             <Image
               src={clothing}
               width={500}
-              height={400}
+              height={220}
               alt="baby image one"
-              className="mb-2 rounded-xl h-[220px]"
+              className="mb-2 rounded-xl h-[200px]"
             />
             <Typography component="h6" variant="h6">
               Clothing
@@ -126,9 +126,9 @@ const CarouselComponent = () => {
             <Image
               src={diapering}
               width={500}
-              height={400}
+              height={220}
               alt="baby image one"
-              className="mb-2 rounded-xl h-[220px]"
+              className="mb-2 rounded-xl h-[200px]"
             />
             <Typography component="h6" variant="h6">
               Diapering
@@ -160,9 +160,9 @@ const CarouselComponent = () => {
             <Image
               src={toys}
               width={500}
-              height={400}
+              height={220}
               alt="baby image one"
-              className="mb-2 rounded-xl h-[220px]"
+              className="mb-2 rounded-xl h-[200px]"
             />
             <Typography component="h6" variant="h6">
               Toys
@@ -195,9 +195,9 @@ const CarouselComponent = () => {
             <Image
               src={health}
               width={500}
-              height={400}
+              height={220}
               alt="baby image one"
-              className="mb-2 rounded-xl h-[220px]"
+              className="mb-2 rounded-xl h-[200px]"
             />
             <Typography component="h6" variant="h6">
               Health & Safety
@@ -230,9 +230,9 @@ const CarouselComponent = () => {
             <Image
               src={bathing}
               width={500}
-              height={400}
+              height={220}
               alt="baby image one"
-              className="mb-2 rounded-xl h-[220px]"
+              className="mb-2 rounded-xl h-[200px]"
             />
             <Typography component="h6" variant="h6">
               Bathing
