@@ -10,9 +10,11 @@ import Image from "next/image";
 import { Product } from "@/types";
 
 const AllProducts = async () => {
-  const res = await fetch(`${process.env.BACKEND_URL}/products`);
+  const res = await fetch(`${process.env.BACKEND_URL}/products`, {
+    cache: "no-store",
+  });
   const products = await res.json();
-  // console.log(products);
+
   return (
     <Box>
       <Typography mb={3} sx={{ textAlign: "center", fontSize: "20px" }}>
@@ -30,7 +32,7 @@ const AllProducts = async () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {products.data.map((product: Product, index: any) => (
+            {products?.data?.map((product: Product, index: any) => (
               <TableRow
                 key={product._id}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}

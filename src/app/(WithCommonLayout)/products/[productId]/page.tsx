@@ -158,7 +158,7 @@ const ProductDetails = async ({ params }: ProductId) => {
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
             <FiberManualRecordIcon fontSize="small" />
             <Typography sx={{ fontSize: "17px", fontWeight: 400 }}>
-              {product.data.category}
+              {product?.data?.category}
             </Typography>
           </Box>
           {/* <Box my={1} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
